@@ -1,22 +1,20 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-
-# Virtual environment
-venv/
+# Python virtual environment
 .venv/
+venv/
 
+# Python cache files
+__pycache__/
+*.pyc
 
-# Ignore all files in this directory
-*
-!/.gitignore
+# Ignore the large data files, but keep the directories.
+# This is good practice so people know where to put their own data.
+# data/*
+!data/.gitkeep
+
+# Ignore the large result files, but keep the directory.
+# results/*
+!results/.gitkeep
+
+# IDE-specific files
+.vscode/
+.idea/
